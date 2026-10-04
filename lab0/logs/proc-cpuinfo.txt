@@ -1,0 +1,16 @@
+cache size	: 8192 KB
+cache_alignment	: 64
+cache size	: 8192 KB
+cache_alignment	: 64
+cache size	: 8192 KB
+cache_alignment	: 64
+cache size	: 8192 KB
+cache_alignment	: 64
+cache size	: 8192 KB
+cache_alignment	: 64
+cache size	: 8192 KB
+cache_alignment	: 64
+cache size	: 8192 KB
+cache_alignment	: 64
+cache size	: 8192 KB
+cache_alignment	: 64

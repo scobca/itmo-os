@@ -1,0 +1,1 @@
+cat: /sys/block/sdX/queue/rotational: Нет такого файла или каталога

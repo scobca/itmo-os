@@ -1,0 +1,12 @@
+Аппаратный адрес  Устройство  Класс     Описание
+======================================================================================
+/0/0                                                   memory         64KiB BIOS
+/0/3d/3e                                               memory         1MiB L2 кэш
+/0/3d/3f                                               memory         256KiB L1 кэш
+/0/3d/40                                               memory         8MiB L3 кэш
+/0/41                                                  memory         16GiB Системная память
+/0/41/0                                                memory         DIMMProject-Id-Version: lshwReport-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>PO-Revision-Date: 2024-09-24 20:15+0000Last-Translator: Eugene Roskin <Unknown>Language-Team: Russian <ru@li.org>MIME-Version: 1.0Content-Type: text/plain; charset=UTF-8Content-Transfer-Encoding: 8bitX-Launchpad-Export-Date: 2024-10-03 12:50+0000X-Generator: Launchpad (build 6341c735b243a0768c3cb66edf85737937cab327)Language: ru_RU [пусто]
+/0/41/1                                                memory         8GiB DIMM DDR3 Синхронная 1600 MHz (0,6 ns)
+/0/41/2                                                memory         DIMMProject-Id-Version: lshwReport-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>PO-Revision-Date: 2024-09-24 20:15+0000Last-Translator: Eugene Roskin <Unknown>Language-Team: Russian <ru@li.org>MIME-Version: 1.0Content-Type: text/plain; charset=UTF-8Content-Transfer-Encoding: 8bitX-Launchpad-Export-Date: 2024-10-03 12:50+0000X-Generator: Launchpad (build 6341c735b243a0768c3cb66edf85737937cab327)Language: ru_RU [пусто]
+/0/41/3                                                memory         8GiB DIMM DDR3 Синхронная 1600 MHz (0,6 ns)
+/0/100/1f.2/0.0.0                /dev/sda              disk           1TB WDC WD10SPZX-22Z
