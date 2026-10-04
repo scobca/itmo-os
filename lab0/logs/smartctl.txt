@@ -1,4 +1,20 @@
 smartctl 7.4 2023-08-01 r5530 [x86_64-linux-6.11.0-29-generic] (local build)
 Copyright (C) 2002-23, Bruce Allen, Christian Franke, www.smartmontools.org
 
-Smartctl open device: /dev/sdX failed: No such device
+=== START OF INFORMATION SECTION ===
+Model Family:     Western Digital Blue Mobile (SMR)
+Device Model:     WDC WD10SPZX-22Z10T1
+Serial Number:    WD-WXX1A39RTPT3
+LU WWN Device Id: 5 0014ee 2110ea006
+Firmware Version: 04.01A04
+User Capacity:    1 000 204 886 016 bytes [1,00 TB]
+Sector Sizes:     512 bytes logical, 4096 bytes physical
+Rotation Rate:    5400 rpm
+Form Factor:      2.5 inches
+TRIM Command:     Available, deterministic
+Device is:        In smartctl database 7.3/5528
+ATA Version is:   ACS-3 T13/2161-D revision 5
+SATA Version is:  SATA 3.1, 6.0 Gb/s (current: 6.0 Gb/s)
+Local Time is:    Mon Oct  5 01:04:11 2026 MSK
+SMART support is: Available - device has SMART capability.
+SMART support is: Enabled
