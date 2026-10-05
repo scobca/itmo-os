@@ -1,0 +1,45 @@
+2026-10-05T16:22:07+03:00
+ 16:22:07 up 6 days, 18:06,  5 users,  load average: 0,00, 0,00, 0,01
+top - 16:22:07 up 6 days, 18:06,  5 users,  load average: 0,00, 0,00, 0,01
+Задачи: 280 total,   1 running, 279 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1,2 us,  0,0 sy,  0,0 ni, 98,8 id,  0,0 wa,  0,0 hi,  0,0 si,  0,0 st 
+МиБ Mem :  15404,9 total,   6422,7 free,   1550,5 used,   7763,3 buff/cache     
+МиБ Swap:  16384,0 total,  16099,8 free,    284,2 used.  13854,4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+
+      1 root      20   0   25324  16096   9952 S   0,0   0,1   8:25.79
+      2 root      20   0       0      0      0 S   0,0   0,0   0:00.38
+      3 root      20   0       0      0      0 S   0,0   0,0   0:00.00
+      4 root       0 -20       0      0      0 I   0,0   0,0   0:00.00
+      5 root       0 -20       0      0      0 I   0,0   0,0   0:00.00
+      6 root       0 -20       0      0      0 I   0,0   0,0   0:00.00
+      7 root       0 -20       0      0      0 I   0,0   0,0   0:00.00
+      9 root       0 -20       0      0      0 I   0,0   0,0   0:00.00
+     12 root       0 -20       0      0      0 I   0,0   0,0   0:00.00
+     13 root      20   0       0      0      0 I   0,0   0,0   0:00.00
+     14 root      20   0       0      0      0 I   0,0   0,0   0:00.00
+     15 root      20   0       0      0      0 I   0,0   0,0   0:00.00
+     16 root      20   0       0      0      0 S   0,0   0,0   0:09.85
+performance
+coretemp-isa-0000
+Adapter: ISA adapter
+Package id 0:  +35.0°C  (high = +80.0°C, crit = +100.0°C)
+Core 0:        +29.0°C  (high = +80.0°C, crit = +100.0°C)
+Core 1:        +35.0°C  (high = +80.0°C, crit = +100.0°C)
+Core 2:        +27.0°C  (high = +80.0°C, crit = +100.0°C)
+Core 3:        +30.0°C  (high = +80.0°C, crit = +100.0°C)
+
+acpitz-acpi-0
+Adapter: ACPI interface
+temp1:        +27.8°C  
+temp2:        +29.8°C  
+
+nouveau-pci-0100
+Adapter: PCI adapter
+GPU core:    850.00 mV (min =  +0.82 V, max =  +1.21 V)
+fan1:         780 RPM
+temp1:        +39.0°C  (high = +95.0°C, hyst =  +3.0°C)
+                       (crit = +105.0°C, hyst =  +5.0°C)
+                       (emerg = +135.0°C, hyst =  +5.0°C)
+power1:       29.47 W  (crit = 300.00 mW)
+
