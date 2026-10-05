@@ -1,0 +1,17 @@
+# started on Mon Oct  5 17:39:22 2026
+
+
+ Performance counter stats for 'taskset -c 2 ./out/graph_traverse_mmap --write --no-cache 100 mmap-graph-rand.bin':
+
+               200      context-switches                                                      
+                 0      cpu-migrations                                                        
+             27441      page-faults                                                           
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+
+       3.965239597 seconds time elapsed
+
+       0.128658000 seconds user
+       0.062785000 seconds sys
+
+

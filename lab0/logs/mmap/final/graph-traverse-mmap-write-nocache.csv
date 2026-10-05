@@ -1,0 +1,21 @@
+timestamp,run_id,order,configuration,graph,core,iterations,flags,wall_time_s,user_time_s,sys_time_s,vol_ctx,invol_ctx,minflt,majflt,exit_status
+2026-10-05T17:42:43+03:00,1,1,seq,mmap-graph-seq.bin,2,100,"--write --no-cache",2.55,0.09,0.05,201,1,27356,0,0
+2026-10-05T17:42:48+03:00,1,2,rand,mmap-graph-rand.bin,2,100,"--write --no-cache",3.92,0.12,0.06,209,1,27353,0,0
+2026-10-05T17:42:54+03:00,2,1,rand,mmap-graph-rand.bin,2,100,"--write --no-cache",3.76,0.12,0.05,201,3,27353,0,0
+2026-10-05T17:43:00+03:00,2,2,seq,mmap-graph-seq.bin,2,100,"--write --no-cache",3.37,0.09,0.05,205,2,27353,0,0
+2026-10-05T17:43:05+03:00,3,1,seq,mmap-graph-seq.bin,2,100,"--write --no-cache",3.04,0.09,0.05,201,0,27452,0,0
+2026-10-05T17:43:10+03:00,3,2,rand,mmap-graph-rand.bin,2,100,"--write --no-cache",3.74,0.12,0.06,201,2,27455,0,0
+2026-10-05T17:43:16+03:00,4,1,rand,mmap-graph-rand.bin,2,100,"--write --no-cache",3.76,0.13,0.05,206,2,27454,0,0
+2026-10-05T17:43:22+03:00,4,2,seq,mmap-graph-seq.bin,2,100,"--write --no-cache",3.16,0.09,0.05,201,1,27355,0,0
+2026-10-05T17:43:27+03:00,5,1,seq,mmap-graph-seq.bin,2,100,"--write --no-cache",3.24,0.09,0.05,201,0,27355,0,0
+2026-10-05T17:43:32+03:00,5,2,rand,mmap-graph-rand.bin,2,100,"--write --no-cache",3.91,0.12,0.06,207,3,27454,0,0
+2026-10-05T17:43:38+03:00,6,1,rand,mmap-graph-rand.bin,2,100,"--write --no-cache",3.66,0.13,0.05,201,2,27355,0,0
+2026-10-05T17:43:43+03:00,6,2,seq,mmap-graph-seq.bin,2,100,"--write --no-cache",2.61,0.09,0.05,201,1,27352,0,0
+2026-10-05T17:43:48+03:00,7,1,seq,mmap-graph-seq.bin,2,100,"--write --no-cache",2.71,0.10,0.05,201,0,27354,0,0
+2026-10-05T17:43:53+03:00,7,2,rand,mmap-graph-rand.bin,2,100,"--write --no-cache",3.76,0.13,0.05,201,0,27454,0,0
+2026-10-05T17:43:59+03:00,8,1,rand,mmap-graph-rand.bin,2,100,"--write --no-cache",3.59,0.12,0.06,201,2,27355,0,0
+2026-10-05T17:44:04+03:00,8,2,seq,mmap-graph-seq.bin,2,100,"--write --no-cache",3.25,0.10,0.04,201,2,27453,0,0
+2026-10-05T17:44:09+03:00,9,1,seq,mmap-graph-seq.bin,2,100,"--write --no-cache",3.34,0.08,0.06,202,1,27355,0,0
+2026-10-05T17:44:15+03:00,9,2,rand,mmap-graph-rand.bin,2,100,"--write --no-cache",3.67,0.12,0.05,201,1,27452,0,0
+2026-10-05T17:44:20+03:00,10,1,rand,mmap-graph-rand.bin,2,100,"--write --no-cache",3.98,0.13,0.05,209,1,27351,0,0
+2026-10-05T17:44:26+03:00,10,2,seq,mmap-graph-seq.bin,2,100,"--write --no-cache",3.09,0.10,0.05,201,1,27453,0,0

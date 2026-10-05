@@ -1,0 +1,74 @@
+Файл записан: mmap-graph-rand.bin
+  размер файла:        1048576 байт (запрошено: 1048576)
+  число вершин:        43689
+  размер записи:       24 байт
+  fan_out:             1
+  page_size:           4096
+  min_step_nodes:      342 (~8208 байт)
+  root_index:          9668  (offset=232072)
+  рёбер всего:         43688
+  доля вперёд/назад:   0.502 / 0.498 (запрошено backprob=0.5)
+  доля 'коротких' переходов (< min_step_nodes): 0.040
+Проверка:
+  достижимо из корня:  43689/43689 (100.00%)
+  макс. глубина BFS:   43688
+  граф ацикличен:      True
+
+/* ------------------------------------------------------------------------
+ * Автоматически сгенерировано graphgen.py для текущих параметров:
+ *   size=1M  fanout=1  backprob=0.5
+ *   page_size=4096  min_step_pages=2.0
+ *   seed=427
+ *
+ *   node_count      = 43689
+ *   record_size     = 24 байт
+ *   min_step_nodes  = 342 (~8208 байт)
+ *
+ *   ВНИМАНИЕ: page_size/backprob/seed/min_step_nodes НЕ хранятся в самом
+ *   файле (сознательно, чтобы читающая программа не могла подстроиться
+ *   под гиперпараметры генерации) — они есть только здесь, в этом
+ *   сгенерированном для СБОРКИ снипете, и в консольном выводе генератора.
+ * ------------------------------------------------------------------------ */
+#include <stdint.h>
+#include <stddef.h>
+
+#define GCACHEG_MAGIC        "GCACHEG1"   /* 8 байт, без завершающего нуля  */
+#define GCACHEG_VERSION      1u
+#define GCACHEG_FAN_OUT      1
+#define GCACHEG_NODE_COUNT   43689ULL
+#define GCACHEG_RECORD_SIZE  24u
+#define GCACHEG_SENTINEL     0xFFFFFFFFFFFFFFFFULL  /* пустой слот children[] */
+
+#pragma pack(push, 1)
+
+/* Заголовок файла, ровно 40 байт, little-endian, без выравнивания.
+ * Гиперпараметры генерации (page_size, backprob, seed, min_step_nodes)
+ * в файл намеренно не пишутся. */
+typedef struct {
+    char     magic[8];             /* "GCACHEG1"                      */
+    uint32_t version;
+    uint64_t node_count;
+    uint32_t record_size;          /* == sizeof(gcacheg_node_t)       */
+    uint32_t fan_out;
+    uint64_t root_index;           /* индекс стартовой вершины обхода */
+    uint32_t flags;                /* bit0: 1 = граф ацикличен (DAG)  */
+} gcacheg_header_t;
+
+/* Запись одной вершины, 24 байт. */
+typedef struct {
+    int64_t  value;                    /* payload, можно менять при записи */
+    uint32_t degree;                   /* фактическое число детей <= fan_out */
+    uint32_t reserved;
+    uint64_t children[GCACHEG_FAN_OUT]; /* индексы; неисп. слоты = SENTINEL  */
+} gcacheg_node_t;
+
+#pragma pack(pop)
+
+_Static_assert(sizeof(gcacheg_header_t) == 40, "header size mismatch");
+_Static_assert(sizeof(gcacheg_node_t) == GCACHEG_RECORD_SIZE, "record size mismatch");
+
+/* offset(i) = header + i * record_size, O(1) доступ по индексу */
+static inline uint64_t gcacheg_node_offset(uint64_t index) {
+    return (uint64_t)sizeof(gcacheg_header_t) + index * (uint64_t)sizeof(gcacheg_node_t);
+}
+
