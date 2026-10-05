@@ -1,0 +1,17 @@
+# started on Mon Oct  5 03:51:17 2026
+
+
+ Performance counter stats for './out/graph_traverse --write 1 graph-rand.bin':
+
+                 5      context-switches                                                      
+                 0      cpu-migrations                                                        
+                57      page-faults                                                           
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+
+       0,528182009 seconds time elapsed
+
+       0,274084000 seconds user
+       0,254077000 seconds sys
+
+
