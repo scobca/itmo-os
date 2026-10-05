@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<rect width="100%" height="100%" fill="white"/>
+<style>text { font-family: Arial, sans-serif; fill: #172033; } .axis { stroke: #475569; stroke-width: 1.5; } .grid { stroke: #dbe3ec; stroke-width: 1; } .tick { font-size: 13px; } .label { font-size: 15px; } .title { font-size: 22px; font-weight: 700; }</style>
+<text x="450" y="36" text-anchor="middle" class="title">Среднее время и 95%-й доверительный интервал</text>
+<line x1="105" y1="440.0" x2="855" y2="440.0" class="grid"/>
+<text x="93" y="445.0" text-anchor="end" class="tick">7</text>
+<line x1="105" y1="366.0" x2="855" y2="366.0" class="grid"/>
+<text x="93" y="371.0" text-anchor="end" class="tick">8</text>
+<line x1="105" y1="292.0" x2="855" y2="292.0" class="grid"/>
+<text x="93" y="297.0" text-anchor="end" class="tick">9</text>
+<line x1="105" y1="218.0" x2="855" y2="218.0" class="grid"/>
+<text x="93" y="223.0" text-anchor="end" class="tick">10</text>
+<line x1="105" y1="144.0" x2="855" y2="144.0" class="grid"/>
+<text x="93" y="149.0" text-anchor="end" class="tick">11</text>
+<line x1="105" y1="70.0" x2="855" y2="70.0" class="grid"/>
+<text x="93" y="75.0" text-anchor="end" class="tick">12</text>
+<line x1="105" y1="70" x2="105" y2="440" class="axis"/>
+<line x1="105" y1="440" x2="855" y2="440" class="axis"/>
+<text x="28" y="255.0" transform="rotate(-90 28 255.0)" text-anchor="middle" class="label">Время, с</text>
+<line x1="345.0" y1="385.1" x2="345.0" y2="376.2" stroke="#2563eb" stroke-width="4"/>
+<line x1="327.0" y1="385.1" x2="363.0" y2="385.1" stroke="#2563eb" stroke-width="4"/>
+<line x1="327.0" y1="376.2" x2="363.0" y2="376.2" stroke="#2563eb" stroke-width="4"/>
+<circle cx="345.0" cy="380.7" r="9" fill="#2563eb"/>
+<text x="345.0" y="472" text-anchor="middle" class="label">seq</text>
+<text x="345.0" y="365.7" text-anchor="middle" class="label">7.802 с</text>
+<line x1="645.0" y1="385.1" x2="645.0" y2="127.3" stroke="#dc2626" stroke-width="4"/>
+<line x1="627.0" y1="385.1" x2="663.0" y2="385.1" stroke="#dc2626" stroke-width="4"/>
+<line x1="627.0" y1="127.3" x2="663.0" y2="127.3" stroke="#dc2626" stroke-width="4"/>
+<circle cx="645.0" cy="256.2" r="9" fill="#dc2626"/>
+<text x="645.0" y="472" text-anchor="middle" class="label">rand</text>
+<text x="645.0" y="241.2" text-anchor="middle" class="label">9.484 с</text>
+</svg>
